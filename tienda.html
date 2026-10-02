@@ -1,0 +1,686 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skateboards & Co. | Skateshop</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="carrito-icono" id="abrirCarrito">
+    🛒
+    <span id="contadorCarrito">0</span>
+</div>
+
+<div class="carrito-panel" id="carritoPanel">
+
+    <div class="carrito-header">
+        <h2>🛒 Tu carrito</h2>
+        <button id="cerrarCarrito">✕</button>
+    </div>
+
+    <div id="carritoProductos">
+        <p class="carrito-vacio">
+            Tu carrito está vacío.
+        </p>
+    </div>
+
+    <div class="carrito-footer">
+
+        <div class="carrito-total">
+            <span>Total:</span>
+            <strong id="carritoTotal">$0</strong>
+        </div>
+
+        <button id="vaciarCarrito">
+            🗑️ Vaciar carrito
+        </button>
+
+    </div>
+
+</div>
+   <header>
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="#inicio">
+                    <img src="skate partido.jpg" alt="Logo Skateshop" class="nav-logo-icon">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="#productos">
+                    <img src="skate partido.jpg" alt="Logo Skateshop" class="nav-logo-icon">
+                    Productos
+                </a>
+            </li>
+            <li>
+                <a href="#reseñas">
+                    <img src="skate partido.jpg" alt="Logo Skateshop" class="nav-logo-icon">
+                    Reseñas
+                </a>
+            </li>
+            <li>
+                <a href="#contacto" class="btn-contacto">
+                    <img src="skate partido.jpg" alt="Logo Skateshop" class="nav-logo-icon">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <section id="inicio" class="hero-section">
+        <div class="hero-overlay"></div> 
+        <div class="hero-content">
+            <h1>STREET CULTURE & SKATEBOARDING</h1>
+            <p>Equipamiento profesional de alta resistencia. Armá tu setup con las mejores marcas y el mejor maple canadiense.</p>
+            <a href="#productos" class="hero-btn">
+                <img src="skate partido.jpg" alt="Logo" class="hero-btn-icon">
+                Ver Catálogo
+            </a>
+        </div>
+    </section>
+    <main>
+        <section class="personalizador" id="personalizador">
+
+    <div class="personalizador-titulo">
+        <span>SKATEFOREVER CUSTOM</span>
+        <h2>🛹 Personalizá tu Skate</h2>
+        <p>Armá tu setup pieza por pieza.</p>
+    </div>
+
+    <div class="personalizador-contenedor">
+
+        <!-- OPCIONES -->
+        <div class="opciones-skate">
+
+            <div class="opcion">
+                <label for="tabla">🛹 TABLA</label>
+                <select id="tabla">
+                    <option value="0" data-nombre="Sin seleccionar">
+                        Elegí una tabla
+                    </option>
+                    <option value="45000" data-nombre="Tabla Street">
+                        Tabla Street - $45.000
+                    </option>
+                    <option value="55000" data-nombre="Tabla Pro">
+                        Tabla Pro - $55.000
+                    </option>
+                    <option value="65000" data-nombre="Tabla Premium">
+                        Tabla Premium - $65.000
+                    </option>
+                </select>
+            </div>
+
+            <div class="opcion">
+                <label for="trucks">⚙️ TRUCKS</label>
+                <select id="trucks">
+                    <option value="0" data-nombre="Sin seleccionar">
+                        Elegí tus trucks
+                    </option>
+                    <option value="30000" data-nombre="Trucks Básicos">
+                        Trucks Básicos - $30.000
+                    </option>
+                    <option value="40000" data-nombre="Trucks Profesionales">
+                        Trucks Profesionales - $40.000
+                    </option>
+                    <option value="50000" data-nombre="Trucks Premium">
+                        Trucks Premium - $50.000
+                    </option>
+                </select>
+            </div>
+
+            <div class="opcion">
+                <label for="ruedas">⭕ RUEDAS</label>
+                <select id="ruedas">
+                    <option value="0" data-nombre="Sin seleccionar">
+                        Elegí tus ruedas
+                    </option>
+                    <option value="18000" data-nombre="Ruedas Street">
+                        Ruedas Street - $18.000
+                    </option>
+                    <option value="25000" data-nombre="Ruedas Pro">
+                        Ruedas Pro - $25.000
+                    </option>
+                    <option value="32000" data-nombre="Ruedas Premium">
+                        Ruedas Premium - $32.000
+                    </option>
+                </select>
+            </div>
+
+            <div class="opcion">
+                <label for="accesorio">🔧 ACCESORIO</label>
+                <select id="accesorio">
+                    <option value="0" data-nombre="Sin accesorio">
+                        Sin accesorio
+                    </option>
+                    <option value="8000" data-nombre="Rulemanes">
+                        Rulemanes - $8.000
+                    </option>
+                    <option value="10000" data-nombre="Lija">
+                        Lija - $10.000
+                    </option>
+                    <option value="15000" data-nombre="Kit de herramientas">
+                        Kit de herramientas - $15.000
+                    </option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- RESUMEN -->
+        <div class="resumen-skate">
+
+            <div class="resumen-header">
+                <span>TU SETUP</span>
+                <h3>Skate personalizado</h3>
+            </div>
+
+            <div class="selecciones">
+
+                <div class="seleccion">
+                    <span>🛹</span>
+                    <div>
+                        <small>Tabla</small>
+                        <strong id="resumen-tabla">Sin seleccionar</strong>
+                    </div>
+                </div>
+
+                <div class="seleccion">
+                    <span>⚙️</span>
+                    <div>
+                        <small>Trucks</small>
+                        <strong id="resumen-trucks">Sin seleccionar</strong>
+                    </div>
+                </div>
+
+                <div class="seleccion">
+                    <span>⭕</span>
+                    <div>
+                        <small>Ruedas</small>
+                        <strong id="resumen-ruedas">Sin seleccionar</strong>
+                    </div>
+                </div>
+
+                <div class="seleccion">
+                    <span>🔧</span>
+                    <div>
+                        <small>Accesorio</small>
+                        <strong id="resumen-accesorio">Sin accesorio</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="total-skate">
+                <span>PRECIO TOTAL</span>
+                <strong id="precio-total">$0</strong>
+            </div>
+
+            <button class="boton-personalizado" onclick="agregarPersonalizado()">
+                🛒 AGREGAR AL CARRITO
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+        <div id="inicio"></div>
+        <section id="productos" class="productos">
+            <!-- BUSCADOR Y FILTROS -->
+<div class="filtros-productos">
+
+    <div class="buscador">
+        <input 
+            type="text" 
+            id="buscadorProductos" 
+            placeholder="🔎 Buscar productos..."
+        >
+    </div>
+
+    <div class="filtros">
+
+        <select id="filtroCategoria">
+            <option value="todos">🛹 Todas las categorías</option>
+            <option value="tabla">Tablas</option>
+            <option value="trucks">Trucks</option>
+            <option value="ruedas">Ruedas</option>
+            <option value="accesorios">Accesorios</option>
+        </select>
+
+        <select id="filtroPrecio">
+            <option value="todos">💰 Todos los precios</option>
+            <option value="bajo">Hasta $50.000</option>
+            <option value="medio">$50.000 - $80.000</option>
+            <option value="alto">Más de $80.000</option>
+        </select>
+
+        <button id="limpiarFiltros">
+            ✖ Limpiar filtros
+        </button>
+    </div>
+</div>
+            <article class="product-card" data-categoria="tabla" data-precio="95000">
+                <img src="tabla.jpg" alt="Tabla de Skate">
+                <h3 class="product-title">Tabla Maple 8.0"</h3>
+                <p class="product-desc">Construida con 7 capas del mejor arce canadiense. Perfecta combinación de pop y resistencia urbana.</p>
+                <span class="product-price">$95.000</span>
+                <button class="add-to-cart-btn">
+                    <img src="skate partido.jpg" alt="Icono Carrito" class="btn-logo-icon">Al Carrito
+                </button>
+            </article>
+            <article class="product-card" data-categoria="trucks" data-precio="78000">
+                <img src="trucks-skate-importados.webp" alt="Trucks de Skate">
+                <h3 class="product-title">Trucks Pro 139mm</h3>
+                <p class="product-desc">Ejes de aluminio de alta resistencia con geometría optimizada para giros estables y grindeos perfectos.</p>
+                <span class="product-price">$78.000</span>
+                <button class="add-to-cart-btn">
+                    <img src="skate partido.jpg" alt="Icono Carrito" class="btn-logo-icon"> Al Carrito
+                </button>
+            </article>
+            <article class="product-card" data-categoria="ruedas" data-precio="38000">
+                <img src="ruedas de skate.jpg" alt="Ruedas de Skate">
+                <h3 class="product-title">Ruedas Street 52mm</h3>
+                <p class="product-desc">Uretano de alta calidad con dureza 101A. Diseñadas para deslizar con velocidad en pistas y asfalto.</p>
+                <span class="product-price">$38.000</span>
+                <button class="add-to-cart-btn">
+                    <img src="skate partido.jpg" alt="Icono Carrito" class="btn-logo-icon">Al Carrito
+                </button>
+            </article>
+            <article class="product-card" data-categoria="ruedas" data-precio="38000">
+                <img src="ruedas de skate2.webp" alt="Ruedas de Skate">
+                <h3 class="product-title">Ruedas Street 52mm</h3>
+                <p class="product-desc">Uretano de alta calidad con dureza 101A. Diseñadas para deslizar con velocidad en pistas y asfalto.</p>
+                <span class="product-price">$32.000</span>
+                <button class="add-to-cart-btn">
+                    <img src="skate partido.jpg" alt="Icono Carrito" class="btn-logo-icon">Al Carrito
+                </button>
+            </article>
+        </section>
+    </main>
+    </main>
+    </div>
+</section>
+    <section id="reseñas" class="reseñas">
+        <!-- Tarjeta 1 -->
+        <section class="card">
+            <div class="user-info">
+                <i class="fa-solid fa-user-ninja text-neon"></i>
+                <h4>Joaquín Ortiz</h4>
+            </div>
+            <p>"La tabla maple 8.0 tiene un pop impresionante. El envío me llegó rapidísimo a Buenos Aires, super recomendado."</p>
+        </section>
+
+        <!-- Tarjeta 2 -->
+        <section class="card">
+            <div class="user-info">
+                <i class="fa-solid fa-user-astronaut text-neon"></i>
+                <h4>Lucas G.</h4>
+            </div>
+            <p>"Los trucks pro aguantan cualquier impacto en el skatepark. Excelente asesoramiento de los chicos."</p>
+        </section>
+
+        <!-- Tarjeta 3 -->
+        <section class="card">
+            <div class="user-info">
+                <i class="fa-solid fa-skull text-neon"></i>
+                <h4>Mia Bruno</h4>
+            </div>
+            <p>"Las ruedas street deslizan perfecto en asfalto y no se gastan nada. Mi skate quedó flama."</p>
+        </section>
+    </section>
+    <section id="contacto">
+        <h2 class="section-title">Ponete en Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+    </section>
+</script>
+<script>
+function actualizarPersonalizador() {
+
+    const elementos = [
+        {
+            select: "tabla",
+            resumen: "resumen-tabla"
+        },
+        {
+            select: "trucks",
+            resumen: "resumen-trucks"
+        },
+        {
+            select: "ruedas",
+            resumen: "resumen-ruedas"
+        },
+        {
+            select: "accesorio",
+            resumen: "resumen-accesorio"
+        }
+    ];
+
+    let total = 0;
+
+    elementos.forEach(item => {
+
+        const select = document.getElementById(item.select);
+        const resumen = document.getElementById(item.resumen);
+
+        const opcion = select.options[select.selectedIndex];
+
+        const nombre = opcion.dataset.nombre;
+        const precio = Number(select.value);
+
+        resumen.textContent = nombre;
+
+        total += precio;
+    });
+
+    document.getElementById("precio-total").textContent =
+        "$" + total.toLocaleString("es-AR");
+}
+document.querySelectorAll(".opcion select").forEach(select => {
+
+    select.addEventListener("change", actualizarPersonalizador);
+
+});
+function agregarPersonalizado() {
+    const tabla = document.getElementById("tabla");
+    const trucks = document.getElementById("trucks");
+    const ruedas = document.getElementById("ruedas");
+    const accesorio = document.getElementById("accesorio");
+
+    const total =
+        Number(tabla.value) +
+        Number(trucks.value) +
+        Number(ruedas.value) +
+        Number(accesorio.value);
+
+    if (total === 0) {
+
+        alert("🛹 Primero elegí las piezas de tu skate.");
+
+        return;
+    }
+
+
+    const nombreTabla =
+        tabla.options[tabla.selectedIndex].dataset.nombre;
+
+    const nombreTrucks =
+        trucks.options[trucks.selectedIndex].dataset.nombre;
+
+    const nombreRuedas =
+        ruedas.options[ruedas.selectedIndex].dataset.nombre;
+
+    const nombreAccesorio =
+        accesorio.options[accesorio.selectedIndex].dataset.nombre;
+
+
+    const piezas = [
+        nombreTabla,
+        nombreTrucks,
+        nombreRuedas,
+        nombreAccesorio
+    ].filter(nombre =>
+        nombre !== "Sin seleccionar" &&
+        nombre !== "Sin accesorio"
+    );
+
+
+    carrito.push({
+
+        nombre: "🛹 Skate personalizado",
+
+        precio: total,
+
+        detalle: piezas.join(" • ")
+
+    });
+
+
+    actualizarCarrito();
+
+    carritoPanel.classList.add("abierto");
+}
+</script>
+<script>
+
+const buscador = document.getElementById("buscadorProductos");
+const categoria = document.getElementById("filtroCategoria");
+const precio = document.getElementById("filtroPrecio");
+const limpiar = document.getElementById("limpiarFiltros");
+
+const productos = document.querySelectorAll(".product-card");
+
+function filtrarProductos() {
+
+    const texto = buscador.value.toLowerCase();
+    const categoriaElegida = categoria.value;
+    const precioElegido = precio.value;
+
+    productos.forEach(producto => {
+
+        const nombre = producto.textContent.toLowerCase();
+        const categoriaProducto = producto.dataset.categoria;
+        const precioProducto = Number(producto.dataset.precio);
+
+        let mostrar = true;
+
+        // BUSCADOR
+        if (!nombre.includes(texto)) {
+            mostrar = false;
+        }
+
+        if (
+            categoriaElegida !== "todos" &&
+            categoriaProducto !== categoriaElegida
+        ) {
+            mostrar = false;
+        }
+
+        if (precioElegido === "bajo" && precioProducto > 50000) {
+            mostrar = false;
+        }
+
+        if (
+            precioElegido === "medio" &&
+            (precioProducto <= 50000 || precioProducto > 80000)
+        ) {
+            mostrar = false;
+        }
+
+        if (precioElegido === "alto" && precioProducto <= 80000) {
+            mostrar = false;
+        }
+
+        if (mostrar) {
+            producto.style.display = "";
+        } else {
+            producto.style.display = "none";
+        }
+
+    });
+}
+
+buscador.addEventListener("input", filtrarProductos);
+
+categoria.addEventListener("change", filtrarProductos);
+
+precio.addEventListener("change", filtrarProductos);
+
+limpiar.addEventListener("click", function() {
+
+    buscador.value = "";
+    categoria.value = "todos";
+    precio.value = "todos";
+
+    filtrarProductos();
+
+});
+</script>
+<script>
+let carrito = [];
+
+const botonesCarrito = document.querySelectorAll(".add-to-cart-btn");
+const abrirCarrito = document.getElementById("abrirCarrito");
+const cerrarCarrito = document.getElementById("cerrarCarrito");
+const carritoPanel = document.getElementById("carritoPanel");
+const contadorCarrito = document.getElementById("contadorCarrito");
+const carritoProductos = document.getElementById("carritoProductos");
+const carritoTotal = document.getElementById("carritoTotal");
+const vaciarCarrito = document.getElementById("vaciarCarrito");
+
+botonesCarrito.forEach(boton => {
+
+    boton.addEventListener("click", function() {
+
+        const producto = boton.closest(".product-card");
+
+        const nombre = producto.querySelector(".product-title").textContent;
+        const precioTexto = producto.querySelector(".product-price").textContent;
+
+        const precio = Number(
+            precioTexto.replace("$", "").replace(/\./g, "")
+        );
+
+        carrito.push({
+            nombre: nombre,
+            precio: precio
+        });
+
+        actualizarCarrito();
+
+        carritoPanel.classList.add("abierto");
+
+    });
+
+});
+
+function actualizarCarrito() {
+
+    contadorCarrito.textContent = carrito.length;
+
+    carritoProductos.innerHTML = "";
+
+    if (carrito.length === 0) {
+
+        carritoProductos.innerHTML = `
+            <p class="carrito-vacio">
+                Tu carrito está vacío.
+            </p>
+        `;
+
+        carritoTotal.textContent = "$0";
+
+        return;
+    }
+
+    let total = 0;
+
+    carrito.forEach((producto, indice) => {
+
+        total += producto.precio * (producto.cantidad || 1);
+
+        const cantidad = producto.cantidad || 1;
+
+        const elemento = document.createElement("div");
+
+        elemento.className = "producto-carrito";
+
+        elemento.innerHTML = `
+            <div class="carrito-producto-info">
+
+                <strong>${producto.nombre}</strong>
+
+                ${
+                    producto.detalle
+                    ? `<small>${producto.detalle}</small>`
+                    : ""
+                }
+
+                <span>
+                    $${(producto.precio * cantidad).toLocaleString("es-AR")}
+                </span>
+
+                <div class="controles-cantidad">
+
+                    <button onclick="cambiarCantidad(${indice}, -1)">
+                        −
+                    </button>
+
+                    <strong>${cantidad}</strong>
+
+                    <button onclick="cambiarCantidad(${indice}, 1)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button
+                class="eliminar-producto"
+                onclick="eliminarProducto(${indice})">
+                ✕
+            </button>
+        `;
+
+        carritoProductos.appendChild(elemento);
+
+    });
+
+    carritoTotal.textContent =
+        "$" + total.toLocaleString("es-AR");
+}
+function cambiarCantidad(indice, cambio) {
+
+    if (!carrito[indice].cantidad) {
+        carrito[indice].cantidad = 1;
+    }
+
+    carrito[indice].cantidad += cambio;
+
+    if (carrito[indice].cantidad <= 0) {
+        carrito.splice(indice, 1);
+    }
+
+    actualizarCarrito();
+}
+function eliminarProducto(indice) {
+
+    carrito.splice(indice, 1);
+
+    actualizarCarrito();
+}
+
+abrirCarrito.addEventListener("click", function() {
+
+    carritoPanel.classList.add("abierto");
+
+});
+
+cerrarCarrito.addEventListener("click", function() {
+
+    carritoPanel.classList.remove("abierto");
+
+});
+
+vaciarCarrito.addEventListener("click", function() {
+
+    carrito = [];
+
+    actualizarCarrito();
+
+});
+
+</script>
+</body>
+</html>
